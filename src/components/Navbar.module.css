@@ -26,10 +26,3 @@
     text-decoration: underline;
   }
 
-  .navLogo {
-    position: absolute;
-      left: 0;
-      height: 100%;
-      max-width: 25%;
-      margin-left: 20px;
-  }
