@@ -10,9 +10,9 @@ const homeBanner: React.FC = () => {
 
     return (
         <div className='home-container'>
-            <div className='video-background'>
+            {/* <div className='video-background'>
                 <video src='/videos/blonde-hair-1.mp4' autoPlay loop muted />
-            </div>
+            </div> */}
 
             <h1>laudidmyhair</h1>
             <p>Life is more beautiful when you meet the right hairdresser</p>
