@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Navbar.module.css';
+import styles from './NavBar.module.css';
 
-const Navbar: React.FC = () => {
+const NavBar: React.FC = () => {
   const links = [
     { name: 'Home', href: '/' },
     { name: 'Auth', href: '/auth' },
@@ -23,4 +23,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

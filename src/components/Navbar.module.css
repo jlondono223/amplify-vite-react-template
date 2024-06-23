@@ -1,6 +1,7 @@
 .navbar {
     background-color: #333;
     padding: 1rem;
+    width: 100%; /* Make navbar span the full width */
   }
   
   .navList {
@@ -24,4 +25,3 @@
   .navLink:hover {
     text-decoration: underline;
   }
-  

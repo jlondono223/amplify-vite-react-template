@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-
-
 const Home = () => (
-  <main>
+  <div>
     <h1>Welcome to the Homepage</h1>
     <nav>
       <ul>
@@ -10,7 +8,7 @@ const Home = () => (
         <li><Link to="/todos">Todos</Link></li>
       </ul>
     </nav>
-  </main>
+  </div>
 );
 
 export default Home;
