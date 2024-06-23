@@ -1,13 +1,9 @@
-import { Link } from 'react-router-dom';
-const Home = () => (
+import HomeBanner from './components/HomeBanner';
+import React from 'react';
+
+const Home: React.FC = () => (
   <div>
-    <h1>Welcome to the Homepage</h1>
-    <nav>
-      <ul>
-        <li><Link to="/auth">Login</Link></li>
-        <li><Link to="/todos">Todos</Link></li>
-      </ul>
-    </nav>
+    <HomeBanner />
   </div>
 );
 
