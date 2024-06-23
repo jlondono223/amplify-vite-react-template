@@ -4,12 +4,12 @@ import 'reactjs-popup/dist/index.css';
 import '../App.css';
 import './HomeBanner.module.css';
 
-const HeroBanner: React.FC = () => {
+const homeBanner: React.FC = () => {
     const [open, setOpen] = useState(false);
     const closeModal = () => setOpen(false);
 
     return (
-        <div className='hero-container'>
+        <div className='home-container'>
             <div className='video-background'>
                 <video src='/videos/blonde-hair-1.mp4' autoPlay loop muted />
             </div>
@@ -17,7 +17,7 @@ const HeroBanner: React.FC = () => {
             <h1>laudidmyhair</h1>
             <p>Life is more beautiful when you meet the right hairdresser</p>
 
-            <div className='hero-btns'>
+            <div className='home-btns'>
                 <button
                     className='btn btn--outline btn--large'
                     onClick={() => setOpen(true)}
@@ -43,4 +43,4 @@ const HeroBanner: React.FC = () => {
     );
 }
 
-export default HeroBanner;
+export default homeBanner;

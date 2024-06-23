@@ -6,120 +6,161 @@
     left: 0;
     overflow: hidden;
     z-index: -1;
-}
-
-video {
+  }
+  
+  video {
     object-fit: cover;
-    width: 100%;
-    height: 100%; 
-}
-
-  .hero-container video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   
-  .hero-container h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
+  .home-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   }
   
-  .hero-container p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+  .home-container > h1 {
+    color: #fff;
+    font-family: "Pinyon Script", cursive;
+    font-style: normal;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
   }
   
-  .hero-btns {
-    margin-top: 1rem;
+  .home-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    outline: none;
+  .home-btns {
+    margin-top: 32px;
   }
   
-  .btn--outline {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    transition: all 0.3s ease-out;
+  .home-btns .btn {
+    background-color: #D4AF37;
+    color: #242424;
+    border: 2px solid #D4AF37;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 6px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
   }
   
-  .btn--large {
-    font-size: 1rem;
+  .home-btns .btn:hover {
+    background-color: #2C3E50;
+    color: #ffffff;
   }
   
-  .btn:hover {
-    background: white;
-    color: black;
-    transition: all 0.3s ease-out;
+  @media screen and (min-width: 960px) {
+    .home-btns .btn {
+      font-size: 18px;
+      padding: 12px 24px;
+    }
+  }
+  
+  /* Adjustments for medium screens */
+  @media screen and (max-width: 960px) {
+    .home-container > h1 {
+      font-size: 70px;
+    }
+  
+    .home-container > p {
+      font-size: 18px;
+    }
+  }
+  
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .home-container > h1 {
+      font-size: 50px;
+    }
+  
+    .home-container > p {
+      font-size: 24px;
+      max-width: 90%;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    .popup-content {
+      width: 90%;
+      font-size: 16px;
+    }
+  
+    .popup-content p {
+      font-size: 16px;
+    }
+  
+    .contact-list {
+      font-size: 16px;
+    }
   }
   
   .popup-content {
     background: white;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 5px;
     text-align: center;
-    width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto;
   }
   
-  .popup-content .close {
+  .close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .popup-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
   }
   
   .contact-list {
     list-style-type: none;
     padding: 0;
-    margin: 1rem 0 0;
+    font-size: 18px;
   }
   
   .contact-list li {
-    margin: 0.5rem 0;
+    margin: 10px 0;
   }
   
   .contact-list a {
-    color: #333;
+    color: #D4AF37;
     text-decoration: none;
+    transition: color 0.3s ease;
+    word-wrap: break-word;
   }
   
   .contact-list a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Desktop styles */
-  @media (min-width: 768px) {
-    .hero-container h1 {
-      font-size: 3rem;
-    }
-  
-    .hero-container p {
-      font-size: 1.5rem;
-    }
-  
-    .btn {
-      padding: 1rem 2rem;
-      font-size: 1.5rem;
-    }
-  
-    .btn--large {
-      font-size: 1.5rem;
-    }
-  
-    .popup-content {
-      padding: 2rem;
-      width: 50%;
-    }
+    color: #2C3E50;
   }
   
