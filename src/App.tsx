@@ -1,14 +1,13 @@
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Auth from './Auth';
-import NavBar from './components/NavBar';
 import Home from './Home';
 import TodoList from './TodoList';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
