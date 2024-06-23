@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from './Navbar.module.css';
-
+import styles from '../styles/Navbar.module.css';
 const Navbar: React.FC = () => {
   const links = [
     { name: 'Home', href: '/' },

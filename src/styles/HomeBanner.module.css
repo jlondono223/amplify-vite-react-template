@@ -1,4 +1,4 @@
-/* .video-background {
+.video-background {
     position: absolute;
     top: 0;
     right: 0;
@@ -14,7 +14,7 @@
     height: auto;
     min-height: 100%;
   }
-   */
+  
   .home-container {
     position: relative;
     height: auto;
@@ -46,11 +46,11 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
-  .hero-btns {
+  .home-btns {
     margin-top: 32px;
   }
   
-  .hero-btns .btn {
+  .home-btns .btn {
     background-color: #D4AF37;
     color: #242424;
     border: 2px solid #D4AF37;
@@ -63,7 +63,7 @@
     font-size: 16px;
   }
   
-  .hero-btns .btn:hover {
+  .home-btns .btn:hover {
     background-color: #2C3E50;
     color: #ffffff;
   }
@@ -77,7 +77,7 @@
       font-size: 24px;
     }
   
-    .hero-btns .btn {
+    .home-btns .btn {
       font-size: 18px;
       padding: 12px 24px;
     }

@@ -1,4 +1,4 @@
-import HomeBanner from './components/HomeBanner';
+import HomeBanner from '../HomeBanner';
 import React from 'react';
 
 const Home: React.FC = () => (
