@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import '../App.css';  // Global styles
-import styles from '../styles/HomeBanner.module.css';  // Component-specific styles
+import styles from '../styles/HomeBanner.module.css';  
 
 const HomeBanner: React.FC = () => {
     const [open, setOpen] = useState(false);
