@@ -11,8 +11,8 @@ const HomeBanner: React.FC = () => {
 
     return (
         <div className={styles['home-container']}>
-            <div className={styles['video-background']}>
-                <video src='/videos/blonde-hair-1.mp4' autoPlay loop muted />
+            <div className={styles['image-background']}>
+                <img src='/images/ldmh-banner.jpg' alt='Banner' />
             </div>
 
             <h1>laudidmyhair</h1>

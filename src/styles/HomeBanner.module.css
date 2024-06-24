@@ -1,4 +1,17 @@
-.video-background {
+.home-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.image-background {
     position: absolute;
     top: 0;
     right: 0;
@@ -6,27 +19,16 @@
     left: 0;
     overflow: hidden;
     z-index: -1;
-  }
+}
   
-  video {
+  .image-background img {
     object-fit: cover;
     width: 100%;
-    height: auto;
-    min-height: 100%;
+    height: 100%;
+   
   }
   
-  .home-container {
-    position: relative;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 20px;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  }
+
   
   .home-container > h1 {
     color: #fff;
