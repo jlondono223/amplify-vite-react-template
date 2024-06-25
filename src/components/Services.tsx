@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/Services.module.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 interface Service {
   name: string;
@@ -57,8 +59,13 @@ export const ServiceData: ServiceCategory[] = [
 
 const Services: React.FC = () => {
   const [flipped, setFlipped] = useState<boolean[]>(new Array(ServiceData.length).fill(false));
-  const [visible, setVisible] = useState<boolean[]>(new Array(ServiceData.length).fill(false));
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+      once: false,
+    });
+  }, []);
 
   const handleFlip = (index: number) => {
     const newFlipped = [...flipped];
@@ -66,42 +73,16 @@ const Services: React.FC = () => {
     setFlipped(newFlipped);
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          const index = parseInt(entry.target.getAttribute('data-index') || '0');
-          const isVisible = entry.isIntersecting;
-          setVisible(prev => {
-            const newVisible = [...prev];
-            newVisible[index] = isVisible;
-            return newVisible;
-          });
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    cardRefs.current.forEach(ref => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => {
-      cardRefs.current.forEach(ref => {
-        if (ref) observer.unobserve(ref);
-      });
-    };
-  }, []);
-
   return (
     <div className={styles.servicesSection}>
       <h1 className={styles.header}>Services</h1>
       {ServiceData.map((service, index) => (
         <div
           key={index}
-          data-index={index}
-          ref={el => cardRefs.current[index] = el}
-          className={`${styles.cardContainer} ${visible[index] ? (index % 2 === 0 ? styles.slideInRight : styles.slideInLeft) : (index % 2 === 0 ? styles.slideOutRight : styles.slideOutLeft)}`}
+          className={styles.cardContainer}
+          data-aos={index % 2 === 0 ? 'fade-up-right' : 'fade-up-left'}
+          data-aos-duration="1000"
+          data-aos-offset="200"
         >
           <div
             className={`${styles.card} ${flipped[index] ? styles.flipped : ''}`}
