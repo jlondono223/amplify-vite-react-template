@@ -1,7 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
+import 'swiper/css/effect-coverflow';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
 import styles from '../styles/PhotoCarousel.module.css';
 
 interface Photo {
@@ -15,9 +16,17 @@ interface PhotoCarouselProps {
 const PhotoCarousel: React.FC<PhotoCarouselProps> = ({ photos }) => {
   return (
     <Swiper
-      modules={[Autoplay]}
+      effect={'coverflow'}
+      grabCursor={true}
+      centeredSlides={true}
       slidesPerView={2}
-      spaceBetween={10}
+      coverflowEffect={{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      }}
       autoplay={{
         delay: 1800,
         disableOnInteraction: false,
@@ -36,6 +45,7 @@ const PhotoCarousel: React.FC<PhotoCarouselProps> = ({ photos }) => {
           spaceBetween: 40,
         },
       }}
+      modules={[Autoplay, EffectCoverflow]}
       className={styles.mySwiper}
     >
       {photos.map((photo, index) => (
@@ -48,3 +58,4 @@ const PhotoCarousel: React.FC<PhotoCarouselProps> = ({ photos }) => {
 };
 
 export default PhotoCarousel;
+
