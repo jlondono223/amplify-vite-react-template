@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden; /* Prevent overflow */
   }
   
   .header {
@@ -15,6 +16,7 @@
     width: 80%;
     max-width: 300px;
     margin: 20px 0;
+    overflow: hidden; /* Prevent overflow */
   }
   
   .card {
@@ -28,6 +30,7 @@
     perspective: 1000px;
     cursor: pointer;
     transition: transform 0.6s;
+    overflow: hidden; /* Prevent overflow */
   }
   
   .cardFront, .cardBack {
