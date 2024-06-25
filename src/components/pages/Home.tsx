@@ -2,6 +2,7 @@ import React from 'react';
 import HomeBanner from '../HomeBanner';
 import PhotoCarousel from '../PhotoCarousel'; 
 import Footer from '../Footer';
+import Services from "../Services";
 
 const Home: React.FC = () => {
   // Generate the array of photo objects
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
     <div>
       <HomeBanner />
       <PhotoCarousel photos={photos} />
+      <Services />
       <Footer/>
     </div>
   );
