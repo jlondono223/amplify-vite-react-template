@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #34283c 0%, #553344 50%, #2C3E50 100%);
+  background: #333333; /*Charcoal Gray*/
 }
 
 .logo {

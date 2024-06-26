@@ -1,3 +1,13 @@
+:root {
+  --charcoal-gray: #333333;
+  --silver: #C0C0C0;
+  --soft-white: #F5F5F5;
+  --smokey-blue: #708090;
+  --rich-black: #000000;
+}
+ 
+ 
+ 
  /* main {
   display: flex;
   flex-direction: column;

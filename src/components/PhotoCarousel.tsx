@@ -18,6 +18,7 @@ const PhotoCarousel: React.FC<PhotoCarouselProps> = ({ photos }) => {
     <Swiper
       effect={'coverflow'}
       rewind={true}
+      speed={600}
       grabCursor={true}
       centeredSlides={true}
       slidesPerView={2}
