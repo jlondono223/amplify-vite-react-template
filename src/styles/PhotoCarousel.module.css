@@ -18,9 +18,6 @@
   transform: scale(1.2); /* Slightly enlarge the active slide */
 }
 
-.swiper-slide:hover  {
-  transform: scale(4.0); /* Enlarge the slide image on hover */
-}
 
 .swiper-slide {
   display: flex;
