@@ -1,11 +1,19 @@
 import React from 'react';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/Footer.module.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 import logo from '/vite.svg'; 
 
 const Footer: React.FC = () => {
+  const handleCancellationPolicyClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    toast.info("Don't.");
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
@@ -35,8 +43,20 @@ const Footer: React.FC = () => {
         <div className={styles.footerColumn}>
           <div className={styles.footerSection}>
             <h3 className={styles.footerHeader}>Misc</h3>
-            <a href="/cancellation-policy" className={styles.footerLink}>Cancellation Policy</a>
-            <br />
+            <a href="/cancellation-policy" className={styles.footerLink} onClick={handleCancellationPolicyClick}>Cancellation Policy</a>
+            <ToastContainer
+              position="bottom-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+              transition={Bounce}
+              />
             <a href="/review" className={styles.footerLink}>Review</a>
           </div>
         </div>
