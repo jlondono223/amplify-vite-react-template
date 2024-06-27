@@ -1,38 +1,58 @@
 .footer {
-  background-color: var(--smokey-blue);
-  padding: 1rem 0.5rem; /* Reduced padding */
+  background-color: var(--charcoal-gray);
   color: var(--soft-white);
   position: relative;
-  border-top: 2px solid var(--silver); /* Added border */
+  border-top: 2px solid var(--silver);
 }
 
 .footerContent {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align text to the left */
+  flex-direction: row;
   justify-content: space-between;
- 
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .footerColumn {
   display: flex;
   flex-direction: column;
-  text-align: left;
   flex: 1;
 }
 
+.footerSection {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
 
 .footerHeader {
-  margin-bottom: 0.25rem; /* Reduced margin */
-  font-size: 1rem; /* Adjusted font size */
-  font-weight: 800;
-  left: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
   color: var(--silver);
 }
 
-.footerAddress,
+.footerContact, .footerAddress {
+  margin: 0;
+  padding: 0;
+  
+  text-align: center;
+}
+
 .footerContact {
-   margin-bottom: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footerIcon {
+  color: var(--soft-white);
+  text-decoration: none;
+}
+
+.footerIcon:hover {
+  color: var(--silver);
 }
 
 .footerLink {
@@ -45,31 +65,33 @@
 }
 
 .footerLogo {
-  display: flex;
-  justify-content: flex-end;
   position: absolute;
-  bottom: 0.5rem; /* Adjusted position */
-  right: 0.5rem; /* Adjusted position */
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .logo {
-  max-width: 75px; /* Adjusted logo size */
+  max-width: 75px;
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .footerContent {
-    flex-direction: row;
-    gap: 1rem; /* Adjusted gap */
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footerSection {
-    margin-bottom: 0;
+  .footerColumn {
+    width: 100%;
+  }
+
+  .footerContact {
+    flex-wrap: wrap;
   }
 
   .footerLogo {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
+    position: static;
+    align-self: center;
+    margin-top: 1rem;
   }
 }
