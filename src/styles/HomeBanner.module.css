@@ -104,12 +104,17 @@
 
 .contact-list {
   list-style-type: none;
+  display: flex;
+  gap: 1rem; /* Adjust the gap as needed */
   padding: 0;
+  margin: 0;
+  
   font-size: 18px;
   color: var(--rich-black);
 }
 
 .contact-list li {
+  display: inline;
   margin: 5px 0; /* Reduced margin */
 }
 

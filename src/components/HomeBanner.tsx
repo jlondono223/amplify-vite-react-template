@@ -4,6 +4,9 @@ import 'reactjs-popup/dist/index.css';
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos'; // Import AOS library
 import '../App.css';  // Global styles
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/HomeBanner.module.css';
 
 const HomeBanner: React.FC = () => {
@@ -39,9 +42,20 @@ const HomeBanner: React.FC = () => {
                     <div className={styles['popup-inner']}>
                         <h2>Contact to book:</h2>
                         <ul className={styles['contact-list']}>
-                            <li><a href="https://www.instagram.com/laudidmyhair/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                            <li><a href="tel:+6035125646">Call/Text: (603) 512-5646</a></li>
-                            <li><a href="mailto:laurengarner18@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+                            <li><a href="https://www.instagram.com/laudidmyhair/" className={styles.footerIcon} target="_blank" aria-label="Instagram">
+                                <FontAwesomeIcon icon={faInstagram} size="2x" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:1234567890" className={styles.footerIcon}>
+                                    <FontAwesomeIcon icon={faPhone} size="2x" />
+                                </a>
+                            </li>
+                            <li>
+                            <a href="mailto:laurengarner18@gmail.com" className={styles.footerIcon} target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                            </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
