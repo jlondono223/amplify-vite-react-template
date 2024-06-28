@@ -97,7 +97,8 @@ const Services: React.FC = () => {
               <ul className={styles.serviceList}>
                 {service.services.map((item, idx) => (
                   <li key={idx} className={styles.serviceItem}>
-                    {item.name} - {item.price}
+                    <span>{item.name}</span>
+                    <span>{item.price}</span>
                   </li>
                 ))}
               </ul>
@@ -110,3 +111,4 @@ const Services: React.FC = () => {
 };
 
 export default Services;
+
