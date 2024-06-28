@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import logo from '/laudidmyhair.png';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  
+
   const links = [
     { name: 'Home', href: '/' },
-    // { name: 'Auth', href: '/auth' },
-    // { name: 'Todos', href: '/todos' },
   ];
 
   const toggleMenu = () => {
@@ -30,8 +29,12 @@ const Navbar: React.FC = () => {
           </li>
         ))}
       </ul>
+      <div className={styles.logo}>
+        <img src={logo} alt="Logo" className={styles.logoImage} />
+      </div>
     </nav>
   );
 };
 
 export default Navbar;
+

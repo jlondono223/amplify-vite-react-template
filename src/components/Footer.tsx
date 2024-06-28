@@ -6,7 +6,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/Footer.module.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-import logo from '/vite.svg'; 
+import logo from '/laudidmyhair.png'; 
 
 const Footer: React.FC = () => {
   const handleCancellationPolicyClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
