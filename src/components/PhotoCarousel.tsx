@@ -54,7 +54,7 @@ const PhotoCarousel: React.FC<PhotoCarouselProps> = ({ photos }) => {
         {photos.map((photo, index) => (
           <SwiperSlide key={index} className={styles.swiperSlide}>
             <div className={styles.imageWrapper}>
-              <img src={photo.url} alt={`Slide ${index}`} className={styles.slideImage} />
+              <img src={photo.url} alt={`Slide ${index}`} className={styles.slideImage} loading="lazy" />
             </div>
           </SwiperSlide>
         ))}

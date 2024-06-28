@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
   
   const links = [
     { name: 'Home', href: '/' },
-    { name: 'Auth', href: '/auth' },
-    { name: 'Todos', href: '/todos' },
+    // { name: 'Auth', href: '/auth' },
+    // { name: 'Todos', href: '/todos' },
   ];
 
   const toggleMenu = () => {
