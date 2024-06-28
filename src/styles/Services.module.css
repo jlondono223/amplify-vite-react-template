@@ -5,10 +5,15 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden; /* Prevent overflow */
+  
 }
 
 .header {
   font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--soft-white);
+  margin-bottom: 0.11rem;
+  
 }
 
 .cardContainer {
@@ -75,6 +80,8 @@
 .cardTitle {
   font-size: 1.5rem;
   margin-top: 10px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
 }
 
 .serviceList {
@@ -83,6 +90,7 @@
   margin: 0;
   text-align: left;
   width: 100%;
+  
 }
 
 .serviceItem {
@@ -90,5 +98,5 @@
   padding: 5px 0;
   display: flex;
   justify-content: space-between; /* Align service names to left and prices to right */
-  
+  font-family: 'Montserrat', sans-serif;
 }

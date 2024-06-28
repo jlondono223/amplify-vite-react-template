@@ -51,8 +51,8 @@ export const ServiceData: ServiceCategory[] = [
     category: "TREATMENT",
     image: "images/ldmh-treatment.jpg",
     services: [
-      { name: "Hair Rejuvenation Treatment", price: "$100+" },
-      { name: "KERASILK Treatment", price: "$350+" },
+      { name: "Hair Rejuvenation", price: "$100+" },
+      { name: "KERASILK", price: "$350+" },
     ],
   },
 ];
