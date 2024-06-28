@@ -14,6 +14,7 @@
 
 .image-background {
   position: absolute;
+  border: 2px solid black;
   top: 0;
   right: 0;
   bottom: 0;
@@ -105,7 +106,7 @@
 .contact-list {
   list-style-type: none;
   display: flex;
-  gap: 1rem; /* Adjust the gap as needed */
+  gap: 1rem; 
   padding: 0;
   margin: 0;
   
@@ -115,7 +116,7 @@
 
 .contact-list li {
   display: inline;
-  margin: 5px 0; /* Reduced margin */
+  margin: 5px 0; 
 }
 
 .contact-list a {
