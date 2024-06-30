@@ -3,7 +3,7 @@ import styles from '../styles/Services.module.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisH, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 interface Service {
   name: string;
@@ -93,7 +93,7 @@ const Services: React.FC = () => {
             <div className={styles.cardFront}>
               <img src={service.image} alt={service.category} className={styles.cardImage} />
               <h2 className={styles.cardTitle}>{service.category}</h2>
-              <FontAwesomeIcon icon={faEllipsisH} className={styles.flipIcon} />
+              <FontAwesomeIcon icon={flipped[index] ? faTimes : faEllipsisH} className={styles.flipIcon} />
             </div>
             <div className={styles.cardBack}>
               <h2 className={styles.cardTitle}>{service.category}</h2>
@@ -105,6 +105,7 @@ const Services: React.FC = () => {
                   </li>
                 ))}
               </ul>
+              <FontAwesomeIcon icon={flipped[index] ? faTimes : faEllipsisH} className={styles.flipIcon} />
             </div>
           </div>
         </div>
@@ -114,3 +115,4 @@ const Services: React.FC = () => {
 };
 
 export default Services;
+
