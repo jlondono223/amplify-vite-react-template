@@ -77,7 +77,6 @@ const Services: React.FC = () => {
 
   return (
     <div className={styles.servicesSection}>
-      <h1 className={styles.header}>Services</h1>
       {ServiceData.map((service, index) => (
         <div
           key={index}
@@ -115,4 +114,3 @@ const Services: React.FC = () => {
 };
 
 export default Services;
-
