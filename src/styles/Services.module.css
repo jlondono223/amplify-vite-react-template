@@ -5,7 +5,6 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden; /* Prevent overflow */
-  
 }
 
 .header {
@@ -13,7 +12,6 @@
   font-family: 'Poppins', sans-serif;
   color: var(--soft-white);
   margin-bottom: 0.11rem;
-  
 }
 
 .cardContainer {
@@ -100,3 +98,13 @@
   justify-content: space-between; /* Align service names to left and prices to right */
   font-family: 'Montserrat', sans-serif;
 }
+
+.flipIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: var(--rich-black);
+  cursor: pointer;
+}
+
