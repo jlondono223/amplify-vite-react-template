@@ -49,7 +49,7 @@ const HomeBanner: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:1234567890" className={styles.footerIcon}>
+                                <a href="tel:6035125646" className={styles.footerIcon}>
                                     <FontAwesomeIcon icon={faPhone} size="2x" />
                                 </a>
                             </li>

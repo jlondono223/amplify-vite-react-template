@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               <a href="https://www.instagram.com/laudidmyhair/" className={styles.footerIcon} target="_blank" aria-label="Instagram">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
-              <a href="tel:1234567890" className={styles.footerIcon}>
+              <a href="tel:6035125646" className={styles.footerIcon}>
                 <FontAwesomeIcon icon={faPhone} size="2x" />
               </a>
               <a href="mailto:laurengarner18@gmail.com" className={styles.footerIcon} target="_blank" rel="noopener noreferrer">
