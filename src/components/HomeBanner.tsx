@@ -24,8 +24,10 @@ const HomeBanner: React.FC = () => {
                 <img src='/images/ldmh-banner.jpg' alt='Banner' />
             </div>
 
-            <h1 data-aos="fade-right" data-aos-delay="400">laudidmyhair</h1>
-            <p data-aos="fade-left" data-aos-delay="800">Life is more beautiful when you meet the right hairdresser</p>
+            <div className={styles['text-container']}>
+                <h1 data-aos="fade-right" data-aos-delay="400">laudidmyhair</h1>
+                <p data-aos="fade-left" data-aos-delay="800">Life is more beautiful when you meet the right hairdresser</p>
+            </div>
 
             <div className={styles['home-btns']} data-aos="fade-up">
                 <button
@@ -65,4 +67,3 @@ const HomeBanner: React.FC = () => {
 };
 
 export default HomeBanner;
-

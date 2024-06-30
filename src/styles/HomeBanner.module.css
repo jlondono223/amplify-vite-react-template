@@ -29,24 +29,29 @@
   height: 100%;
 }
 
-.home-container > h1 {
+.text-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-container > h1 {
   color: var(--soft-white);
   font-family: "Pinyon Script", cursive;
   font-style: normal;
   font-size: 70px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
   letter-spacing: 2px;
-  z-index: 2;
 }
 
-.home-container > p {
+.text-container > p {
   margin-top: 8px;
   color: var(--soft-white);
   font-size: 20px;
   font-family: 'PT Sans', sans-serif;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .home-btns {
@@ -94,29 +99,28 @@
   right: 10px; /* Corrected position for accessibility */
   cursor: pointer;
   font-size: 20px;
-  color: var(--rich-black);
+  color: var (--rich-black);
 }
 
 .popup-content h2 {
   font-size: 22px;
   margin-bottom: 10px; /* Reduced margin */
-  color: var(--rich-black);
+  color: var (--rich-black);
 }
 
 .contact-list {
   list-style-type: none;
   display: flex;
-  gap: 1rem; 
+  gap: 1rem;
   padding: 0;
   margin: 0;
-  
   font-size: 18px;
-  color: var(--rich-black);
+  color: var (--rich-black);
 }
 
 .contact-list li {
   display: inline;
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 
 .contact-list a {
@@ -130,11 +134,11 @@
 }
 
 @media screen and (min-width: 960px) {
-  .home-container > h1 {
+  .text-container > h1 {
     font-size: 100px;
   }
 
-  .home-container > p {
+  .text-container > p {
     font-size: 24px;
   }
 
@@ -145,11 +149,11 @@
 }
 
 @media screen and (max-width: 960px) {
-  .home-container > h1 {
+  .text-container > h1 {
     font-size: 70px;
   }
 
-  .home-container > p {
+  .text-container > p {
     font-size: 18px;
   }
 
@@ -167,11 +171,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .home-container > h1 {
+  .text-container > h1 {
     font-size: 50px;
   }
 
-  .home-container > p {
+  .text-container > p {
     font-size: 16px;
     max-width: 90%;
   }
