@@ -15,9 +15,9 @@ const Home: React.FC = () => {
   return (
     <div>
       <HomeBanner />
-      <h2 className={styles.sectionHeader}>Gallery</h2>
+      <h2 id="gallery" className={styles.sectionHeader}>Gallery</h2>
       <PhotoCarousel photos={photos} />
-      <h2 className={styles.sectionHeader}>Our Services</h2>
+      <h2 id="services" className={styles.sectionHeader}>Our Services</h2>
       <Services />
       <Footer/>
     </div>

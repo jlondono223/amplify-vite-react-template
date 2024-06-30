@@ -7,6 +7,11 @@ body {
   background: #333333; /*Charcoal Gray*/
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* 
 .logo {
   height: 6em;

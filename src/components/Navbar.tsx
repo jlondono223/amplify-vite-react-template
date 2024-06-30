@@ -9,6 +9,8 @@ const Navbar: React.FC = () => {
 
   const links = [
     { name: 'Home', href: '/' },
+    { name: 'Gallery', href: '#gallery' },
+    { name: 'Services', href: '#services' },
   ];
 
   const toggleMenu = () => {
@@ -23,7 +25,7 @@ const Navbar: React.FC = () => {
       <ul className={`${styles.navList} ${menuOpen ? styles.showMenu : ''}`}>
         {links.map((link, index) => (
           <li key={index} className={styles.navItem}>
-            <a href={link.href} className={styles.navLink}>
+            <a href={link.href} className={styles.navLink} onClick={() => setMenuOpen(false)}>
               {link.name}
             </a>
           </li>
