@@ -1,5 +1,5 @@
 .carouselContainer {
-  height: 33vh;
+  height: 40vh; /* Increased height for a better mobile view */
 }
 
 .mySwiper {
@@ -48,4 +48,28 @@
   background-color: #f0f0f0;
   color: #ccc;
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .carouselContainer {
+    height: 50vh; /* Adjust height for tablets */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carouselContainer {
+    height: 60vh; /* Adjust height for desktops */
+  }
+
+  .swiper-slide {
+    padding: 20px; /* Increase padding for desktop */
+  }
+
+  .imageWrapper {
+    border-radius: 1rem; /* Larger border radius for a more elegant look */
+  }
+
+  .slideImage {
+    height: 100%; /* Adjust height for better image display */
+  }
 }
