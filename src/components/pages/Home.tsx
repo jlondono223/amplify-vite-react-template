@@ -3,6 +3,7 @@ import HomeBanner from '../HomeBanner';
 import PhotoCarousel from '../PhotoCarousel'; 
 import Footer from '../Footer';
 import Services from "../Services";
+import styles from '../../styles/Home.module.css';
 
 const Home: React.FC = () => {
   // Generate the array of photo objects
@@ -14,7 +15,9 @@ const Home: React.FC = () => {
   return (
     <div>
       <HomeBanner />
+      <h2 className={styles.sectionHeader}>Gallery</h2>
       <PhotoCarousel photos={photos} />
+      <h2 className={styles.sectionHeader}>Our Services</h2>
       <Services />
       <Footer/>
     </div>
@@ -22,4 +25,5 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
 
