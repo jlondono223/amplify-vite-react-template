@@ -1,3 +1,11 @@
+.lazyImage {
+  filter: blur(10px);
+  transition: filter 0.3s;
+}
+
+.lazyImage:not([data-src]) {
+  filter: none;
+}
 
 .carouselContainer {
   height: 33vh;
