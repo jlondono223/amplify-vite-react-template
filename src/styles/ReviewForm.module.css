@@ -15,9 +15,25 @@
     font-size: 1rem;
   }
   
+  .reviewFormInput[type="date"]::before {
+    content: attr(placeholder);
+    color: #aaa;
+    position: absolute;
+    margin-left: 10px;
+  }
+  
+  .reviewFormInput[type="date"]:focus::before,
+  .reviewFormInput[type="date"]:valid::before {
+    display: none;
+  }
+  
   .reviewFormTextarea {
     height: 100px;
     resize: vertical;
+  }
+  
+  .reviewFormRating {
+    width: 100px; /* Adjust width as needed */
   }
   
   .reviewFormButton {

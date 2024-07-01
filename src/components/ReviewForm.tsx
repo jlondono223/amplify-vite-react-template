@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { generateClient } from 'aws-amplify/data';
 import type { Schema } from '../../amplify/data/resource';
 import styles from '../styles/ReviewForm.module.css';
+import 'aos/dist/aos.css';
 
 const client = generateClient<Schema>();
 
@@ -37,7 +38,7 @@ const ReviewForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.reviewFormContainer}>
+    <form onSubmit={handleSubmit} className={styles.reviewFormContainer} data-aos="fade-up">
       <input
         type="text"
         name="name"
@@ -61,6 +62,7 @@ const ReviewForm: React.FC = () => {
         name="date"
         value={formData.date}
         onChange={handleChange}
+        placeholder="Date"
         className={styles.reviewFormInput}
         required
       />
@@ -73,7 +75,7 @@ const ReviewForm: React.FC = () => {
         min="0"
         max="5"
         step="0.1"
-        className={styles.reviewFormInput}
+        className={`${styles.reviewFormInput} ${styles.reviewFormRating}`}
         required
       />
       <textarea
