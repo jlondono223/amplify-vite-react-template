@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { generateClient } from 'aws-amplify/data';
-import type { AppointmentReviewSchema } from '../../amplify/data/review';
+import type { Schema } from '../../amplify/data/resource';
 
-const client = generateClient<AppointmentReviewSchema>();
+const client = generateClient<Schema>();
 
 const ReviewList: React.FC = () => {
-    const [reviews, setReviews] = useState<Array<AppointmentReviewSchema["AppointmentReview"]["type"]>>([]);
+    const [reviews, setReviews] = useState<Array<Schema["AppointmentReview"]["type"]>>([]);
 
     useEffect(() => {
         const subscription = client.models.AppointmentReview.observeQuery().subscribe({

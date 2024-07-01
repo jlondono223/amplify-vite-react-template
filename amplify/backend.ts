@@ -1,10 +1,9 @@
 import { defineBackend } from '@aws-amplify/backend';
 import { auth } from './auth/resource';
-// import { data } from './data/resource';
-import { appointmentReviewData } from './data/review';
+import { data } from './data/resource';
+
 
 defineBackend({
   auth,
-  // data,
-  appointmentReviewData,
+  data,
 });

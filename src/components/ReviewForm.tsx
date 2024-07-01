@@ -1,9 +1,9 @@
 // src/components/ReviewForm.tsx
 import React, { useState } from 'react';
 import { generateClient } from 'aws-amplify/data';
-import type { AppointmentReviewSchema } from '../../amplify/data/review';
+import { Schema } from '../../amplify/data/resource';
 
-const client = generateClient<AppointmentReviewSchema>();
+const client = generateClient<Schema>();
 const ReviewForm: React.FC = () => {
     const [formData, setFormData] = useState({
         name: '',

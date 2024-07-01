@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Auth from './Auth';
 import Home from './components/pages/Home';
-import TodoList from './TodoList';
+// import TodoList from './TodoList';
 import Navbar from './components/Navbar';
 
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/todos" element={<TodoList />} />
+        {/* <Route path="/todos" element={<TodoList />} /> */}
       </Routes>
     </Router>
   );
