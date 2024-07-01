@@ -1,0 +1,56 @@
+.reviewListContainer {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .reviewList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .reviewListItem {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewListItem:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .reviewListItemTitle {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .reviewListItemText {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .reviewListContainer {
+      max-width: 800px;
+    }
+  
+    .reviewListItem {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .reviewListItemTitle {
+      font-size: 1.5rem;
+    }
+  
+    .reviewListItemText {
+      font-size: 1.2rem;
+    }
+  }
+  

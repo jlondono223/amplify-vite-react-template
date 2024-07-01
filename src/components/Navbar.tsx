@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
     { name: 'Home', href: '/' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Services', href: '#services' },
+    { name: 'Review', href: '#review' },
   ];
 
   const toggleMenu = () => {

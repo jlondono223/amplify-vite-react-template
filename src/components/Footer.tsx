@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
               theme="light"
               transition={Bounce}
               />
-            <a href="/review" className={styles.footerLink}>Review</a>
+            <a href="#review" className={styles.footerLink}>Review</a>
           </div>
         </div>
       </div>
