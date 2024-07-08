@@ -4,8 +4,7 @@ import HomeBanner from '../HomeBanner';
 import PhotoCarousel from '../PhotoCarousel'; 
 import Footer from '../Footer';
 import Services from "../Services";
-import ReviewForm from '../../components/ReviewForm';
-// import ReviewList from '../../components/ReviewList';
+// import AuthWithReviewForm from '../../components/AuthWithReviewForm';
 import styles from '../../styles/Home.module.css';
 
 const Home: React.FC = () => {
@@ -22,14 +21,13 @@ const Home: React.FC = () => {
       <PhotoCarousel photos={photos} />
       <h2 id="services" className={styles.sectionHeader}>Our Services</h2>
       <Services />
-      <h2 id="review" className={styles.sectionHeader}>Submit a Review</h2>
-      <ReviewForm />
-      {/* <h2 className={styles.sectionHeader}>Reviews</h2> */}
-      {/* <ReviewList /> */}
-      <Footer/>
+      {/* <h2 id="review" className={styles.sectionHeader}>Submit a Review</h2>
+      <AuthWithReviewForm /> */}
+      <Footer />
     </div>
   );
 };
 
 export default Home;
+
 

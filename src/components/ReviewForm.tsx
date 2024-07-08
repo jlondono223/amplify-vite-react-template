@@ -30,7 +30,7 @@ const ReviewForm: React.FC = () => {
         rating: parseFloat(formData.rating.toString()), // Ensure rating is a float
       });
       alert('Review submitted successfully!');
-      setFormData({ name: '', email: '', date: '', rating: 4, content: '' });
+      setFormData({ name: '', email: '', date: '', rating: 0, content: '' });
     } catch (error) {
       console.error('Error submitting review:', error);
       alert('Failed to submit review');

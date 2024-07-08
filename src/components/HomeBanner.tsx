@@ -38,11 +38,13 @@ const HomeBanner: React.FC = () => {
                 </button>
             </div>
 
-            <Popup open={open} closeOnDocumentClick onClose={closeModal}>
+            <Popup open={open} closeOnDocumentClick onClose={closeModal} className="my-popup">
                 <div className={styles['popup-content']}>
-                    <button className={styles.close} onClick={closeModal}>&times;</button>
+                    <div className={styles['popup-header']}>
+                        <h2>Contact to Book:</h2>
+                        <button className={styles.close} onClick={closeModal}>&times;</button>
+                    </div>
                     <div className={styles['popup-inner']}>
-                        <h2>Contact to book:</h2>
                         <ul className={styles['contact-list']}>
                             <li><a href="https://www.instagram.com/laudidmyhair/" className={styles.footerIcon} target="_blank" aria-label="Instagram">
                                 <FontAwesomeIcon icon={faInstagram} size="2x" />
